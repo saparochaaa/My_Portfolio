@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenghis Judah L. Alcantara | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <!-- LEFT SECTION -->
+  <section class="left">
+    <div class="profile">
+      <img src="profile.png" alt="Profile Picture" />
+      <h1>Jenghis Judah L. Alcantara</h1>
+      <p>📍 Quezon City, Philippines</p>
+      <p>✉️ alcantarajenghis12@gmail.com</p>
+      <p>📞 +63 985 363 3268</p>
+    </div>
+
+    <h2>Career Objectives</h2>
+    <p>
+      I am a second-year BS Computer Engineering student from EARIST Manila with a strong
+      passion for hardware and system building. I enjoy solving real-life problems through
+      technology by developing functional systems, websites, and prototypes.
+    </p>
+
+    <h2>Tech Stack</h2>
+    <h3>Frontend</h3>
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">JavaScript</span>
+
+    <h3>Backend</h3>
+    <span class="tag">Node.js</span>
+
+    <h3>Hardware / Embedded</h3>
+    <span class="tag">Arduino Uno</span>
+    <span class="tag">Sensors</span>
+    <span class="tag">Microcontroller Programming</span>
+    <span class="tag">Basic Electronics</span>
+
+    <h3>Tools</h3>
+    <span class="tag">VS Code</span>
+    <span class="tag">Arduino IDE</span>
+    <span class="tag">NetBeans</span>
+    <span class="tag">VB.NET</span>
+    <span class="tag">SolidWorks</span>
+  </section>
+
+  <!-- RIGHT SECTION -->
+  <section class="right">
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li>
+        <strong>University of the Philippines Open University</strong><br />
+        Introduction to Technology for Teaching and Learning
+        <span>July 2025</span>
+      </li>
+      <li>
+        <strong>TESDA Online Program</strong><br />
+        Developing Designs for User Interface
+        <span>May 2025</span>
+      </li>
+      <li>
+        <strong>Senior High Project</strong><br />
+        Developed a School Registrar System
+        <span>May 2024</span>
+      </li>
+    </ul>
+
+    <h2>Projects</h2>
+    <div class="project">
+      <h4>Projectile Motion Simulator</h4>
+      <a href="https://saparochaaa.github.io/NEWTONEXUS/" target="_blank">View Project || NEWTONEXUS</a>
+      <p><br>
+        A physics-based simulation showing projectile motion with adjustable speed, angle,
+        and gravity.
+      </p>
+    </div>
+
+    <div class="project">
+      <h4>TEA-NDAHAN</h4>
+      <a href="https://saparochaaa.github.io/TEA-NDAHAN/" target="_blank">View Project || TEA-NDAHAN</a>
+      <p><br>
+        A menu system for milk tea and frappe drinks with add-to-cart functionality.
+      </p>
+    </div>
+
+    <h2>Certifications</h2>
+    <div id="fullscreenOverlay">
+  <button class="fs-prev" onclick="fsChange(-1)">❮</button>
+  <img id="fullscreenImg">
+  <button class="fs-next" onclick="fsChange(1)">❯</button>
+  <span class="close-btn" onclick="closeFullscreen()">✕</span>
+</div>
+    <div class="slideshow-container">
+
+ <img class="slide" src="slide1.jpg" onclick="openFullscreen(0)">
+<img class="slide" src="slide2.jpg" onclick="openFullscreen(1)">
+<img class="slide" src="slide3.jpg" onclick="openFullscreen(2)">
+<img class="slide" src="slide4.jpg" onclick="openFullscreen(3)">
+
+  <!-- Navigation buttons -->
+  <button class="prev" onclick="changeSlide(-1)">❮</button>
+  <button class="next" onclick="changeSlide(1)">❯</button>
+
+</div>
+
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
