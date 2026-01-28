@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jenghis Judah L. Alcantara | Portfolio</title>
@@ -12,11 +15,29 @@
   <!-- LEFT SECTION -->
   <section class="left">
     <div class="profile">
-      <img src="profile.png" alt="Profile Picture" />
+      <img src="profile.jpg" alt="Profile Picture" />
       <h1>Jenghis Judah L. Alcantara</h1>
       <p>📍 Quezon City, Philippines</p>
-      <p>✉️ alcantarajenghis12@gmail.com</p>
-      <p>📞 +63 985 363 3268</p>
+      <p>📞 +639853633268</p>
+
+      <div class="social-icons">
+    <a href="https://www.facebook.com/jenghislcntr#" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/bfjsdhbjfsbdbfjbdjs/" target="_blank">
+      <i class="fab fa-instagram"></i>
+   </a>
+   <a href="https://github.com/saparochaaa" target="_blank">
+     <i class="fab fa-github"></i>
+    </a>
+   <a href="https://www.linkedin.com/in/jenghisalcantara/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+      </a>
+    <a href="mailto:alcantarajenghis12@gmail.com">
+      <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
     </div>
 
     <h2>Career Objectives</h2>
@@ -46,7 +67,27 @@
     <span class="tag">Arduino IDE</span>
     <span class="tag">NetBeans</span>
     <span class="tag">VB.NET</span>
-    <span class="tag">SolidWorks</span>
+    <span class="tag">SolidWorks</span><br><br>
+
+    <h2>Certifications</h2>
+    <div id="fullscreenOverlay">
+  <button class="fs-prev" onclick="fsChange(-1)">❮</button>
+  <img id="fullscreenImg">
+  <button class="fs-next" onclick="fsChange(1)">❯</button>
+  <span class="close-btn" onclick="closeFullscreen()">✕</span>
+</div>
+    <div class="slideshow-container">
+
+ <img class="slide" src="slide1.jpg" onclick="openFullscreen(0)"><br>
+<img class="slide" src="slide2.jpg" onclick="openFullscreen(1)"><br>
+<img class="slide" src="slide3.jpg" onclick="openFullscreen(2)"><br>
+<img class="slide" src="slide4.jpg" onclick="openFullscreen(3)"><br>
+
+  <!-- Navigation buttons -->
+  <button class="prev" onclick="changeSlide(-1)">❮</button>
+  <button class="next" onclick="changeSlide(1)">❯</button>
+
+</div>
   </section>
 
   <!-- RIGHT SECTION -->
@@ -74,39 +115,35 @@
     <div class="project">
       <h4>Projectile Motion Simulator</h4>
       <a href="https://saparochaaa.github.io/NEWTONEXUS/" target="_blank">View Project || NEWTONEXUS</a>
-      <p><br>
+      <p>
         A physics-based simulation showing projectile motion with adjustable speed, angle,
         and gravity.
-      </p>
+      </p><br>
     </div>
 
     <div class="project">
       <h4>TEA-NDAHAN</h4>
       <a href="https://saparochaaa.github.io/TEA-NDAHAN/" target="_blank">View Project || TEA-NDAHAN</a>
-      <p><br>
+      <p>
         A menu system for milk tea and frappe drinks with add-to-cart functionality.
-      </p>
+      </p><br>
     </div>
 
-    <h2>Certifications</h2>
-    <div id="fullscreenOverlay">
-  <button class="fs-prev" onclick="fsChange(-1)">❮</button>
-  <img id="fullscreenImg">
-  <button class="fs-next" onclick="fsChange(1)">❯</button>
-  <span class="close-btn" onclick="closeFullscreen()">✕</span>
-</div>
-    <div class="slideshow-container">
+    <div class="project">
+      <h4>GWA Calculator</h4>
+      <a href="https://saparochaaa.github.io/GWA_calculator/" target="_blank">View Project || GWA_calculator</a>
+      <p>
+        GWA Calculator is a simple online tool that quickly computes a student’s General Weighted Average based on grades and units.
+      </p><br>
+    </div>
 
- <img class="slide" src="slide1.jpg" onclick="openFullscreen(0)">
-<img class="slide" src="slide2.jpg" onclick="openFullscreen(1)">
-<img class="slide" src="slide3.jpg" onclick="openFullscreen(2)">
-<img class="slide" src="slide4.jpg" onclick="openFullscreen(3)">
-
-  <!-- Navigation buttons -->
-  <button class="prev" onclick="changeSlide(-1)">❮</button>
-  <button class="next" onclick="changeSlide(1)">❯</button>
-
-</div>
+    <div class="project">
+      <h4>GPA Calculator</h4>
+      <a href="https://saparochaaa.github.io/GPA_calculator/" target="_blank">View Project || GPA Calculator</a>
+      <p>
+       GPA Calculator is a simple online tool that quickly computes a student’s GPA for schools like NU and FEU that use a 4.0 grading system.
+      </p><br>
+    </div>
 
   </section>
 </div>

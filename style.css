@@ -9,6 +9,7 @@ body {
   background: #f4f6f8;
 }
 
+/*CONTAINER*/
 .container {
   max-width: 1100px;
   margin: 30px auto;
@@ -19,21 +20,19 @@ body {
   overflow: hidden;
 }
 
-/* Responsive: single column on small screens */
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
   }
-  .left, .right {
+  .left,
+  .right {
     padding: 20px;
   }
 }
-
 .left {
   background: #f9fafb;
   padding: 25px;
 }
-
 .right {
   padding: 25px;
 }
@@ -43,26 +42,52 @@ body {
   border-radius: 50%;
   margin-bottom: 10px;
 }
-
 .profile h1 {
   font-size: 22px;
   margin-bottom: 5px;
 }
+/* Profile text */
+.profile p {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 4px;
+}
 
+/*SOCIAL ICONS */
+.social-icons {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #374967;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #2563eb;
+  transform: translateY(-2px);
+}
+
+/*HEADINGS*/
 h2 {
   margin: 20px 0 10px;
   font-size: 18px;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 5px;
 }
-
 h3 {
   margin-top: 10px;
   font-size: 14px;
 }
-
 .tag {
   display: inline-block;
   background: #e5e7eb;
+  color: #111827;
   padding: 5px 10px;
   border-radius: 20px;
   margin: 5px 5px 0 0;
@@ -80,50 +105,50 @@ h3 {
 .timeline span {
   display: block;
   font-size: 12px;
-  color: gray;
+  color: #6b7280;
 }
 
+/*PROJECTS */
 .project {
   margin-bottom: 15px;
 }
-
 .project a {
   text-decoration: none;
   color: #2563eb;
   font-size: 14px;
 }
-
-.certificate {
-  background: #f1f5f9;
-  padding: 10px;
-  border-radius: 8px;
+.project a:hover {
+  text-decoration: underline;
 }
 
+/*CERTIFICATIONS*/
 .slideshow-container {
   width: 100%;
-  height: 420px;
-  margin: 20px auto;
-  background: #f8fafc;
+  height: 380px;
+  margin: 15px auto;
+  background: #f1f5f9;
+  border: 1px solid #e5e7eb;
   border-radius: 12px;
   position: relative;
+  padding: 10px;
 }
 
-/* Make slides scale properly */
+/* Certificate images */
 .slide {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: none;
-  background: #ffffff;
+  background: transparent;
+  cursor: pointer;
 }
-
-/* Buttons */
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+  background: rgba(148, 158, 180, 0.85);
+  color: #ffffff;
   border: none;
   padding: 8px 12px;
   cursor: pointer;
@@ -131,14 +156,19 @@ h3 {
   border-radius: 50%;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
-
-.prev:hover, .next:hover {
-  background: rgba(0, 0, 0, 0.8);
+.prev {
+  left: 10px;
 }
 
-/* Fullscreen Overlay */
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(37, 99, 235, 1);
+}
+
 #fullscreenOverlay {
   position: fixed;
   inset: 0;
@@ -147,46 +177,56 @@ h3 {
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  padding: 10px;  /* padding for small screens */
+  padding: 10px;
 }
 
-/* Image */
 #fullscreenOverlay img {
   max-width: 90%;
   max-height: 90%;
   object-fit: contain;
-  background: white;
+  background: #ffffff;
   border-radius: 10px;
 }
 
-/* Fullscreen Buttons */
+/* Fullscreen controls */
 .fs-prev,
 .fs-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
+  background: rgba(37, 99, 235, 0.85);
+  color: #ffffff;
   border: none;
   font-size: 26px;
   padding: 12px 16px;
   cursor: pointer;
   border-radius: 50%;
 }
+.fs-prev {
+  left: 30px;
+}
+.fs-next {
+  right: 30px;
+}
+.fs-prev:hover,
+.fs-next:hover {
+  background: rgba(37, 99, 235, 1);
+}
 
-.fs-prev { left: 30px; }
-.fs-next { right: 30px; }
-
+/* Close button */
 .close-btn {
   position: absolute;
   top: 20px;
   right: 30px;
   font-size: 32px;
-  color: white;
+  color: #e5e7eb;
   cursor: pointer;
 }
+.close-btn:hover {
+  color: #ffffff;
+}
 
-/* Responsive adjustments for small screens */
+/*MOBILE ADJUSTMENTS */
 @media (max-width: 600px) {
   .profile img {
     width: 100px;
@@ -197,10 +237,11 @@ h3 {
   h3 {
     font-size: 12px;
   }
-  .slide {
-    height: 250px;  /* smaller slides on phones */
+  .slideshow-container {
+    height: 260px;
   }
-  .fs-prev, .fs-next {
+  .fs-prev,
+  .fs-next {
     font-size: 20px;
     padding: 10px 14px;
   }
